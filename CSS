@@ -1,0 +1,414 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #faf9f6;
+    color: #252525;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background: #17212b;
+    padding: 18px 6%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: white;
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #d4ad72;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar ul a:hover {
+    color: #d4ad72;
+}
+
+.nav-btn {
+    background: #d4ad72;
+    color: #17212b !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 550px;
+    background:
+        linear-gradient(rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)),
+        url("https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600")
+        center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tagline,
+.small-heading {
+    color: #bd9255;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.tagline) {
+    margin-bottom: 30px;
+    color: #eeeeee;
+}
+
+.btn {
+    display: inline-block;
+    background: #d4ad72;
+    color: #17212b;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* Booking Section */
+.booking-section {
+    background: white;
+    max-width: 1100px;
+    margin: -40px auto 30px;
+    padding: 30px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+}
+
+.booking-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.booking-form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    align-items: end;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    grid-column: 1 / -1;
+    padding: 13px;
+    background: #17212b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.booking-form button:hover {
+    background: #bd9255;
+    color: #17212b;
+}
+
+/* Common Sections */
+.section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+/* About */
+.about {
+    max-width: 900px;
+    margin: auto;
+}
+
+.about > p:last-child {
+    color: #666;
+    font-size: 17px;
+}
+
+/* Rooms */
+.room-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.room-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    text-align: left;
+}
+
+.room-card:hover {
+    transform: translateY(-8px);
+}
+
+.room-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.room-info {
+    padding: 22px;
+}
+
+.room-info h3 {
+    margin-bottom: 10px;
+}
+
+.room-info p {
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.room-info h4 {
+    color: #bd9255;
+    margin-bottom: 18px;
+}
+
+.room-btn {
+    display: inline-block;
+    background: #17212b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.room-btn:hover {
+    background: #bd9255;
+    color: #17212b;
+}
+
+/* Facilities */
+.facilities {
+    background: #f0ede6;
+}
+
+.facility-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.facility-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.facility-card:hover {
+    transform: translateY(-5px);
+}
+
+.facility-card span {
+    font-size: 35px;
+}
+
+.facility-card h3 {
+    margin: 12px 0;
+}
+
+.facility-card p {
+    color: #777;
+}
+
+/* Special Offer */
+.offer {
+    text-align: center;
+    padding: 65px 20px;
+    background: #17212b;
+    color: white;
+}
+
+.offer > p:first-child {
+    color: #d4ad72;
+    letter-spacing: 3px;
+}
+
+.offer h2 {
+    font-size: 32px;
+    margin: 12px 0;
+}
+
+.offer .btn {
+    margin-top: 20px;
+}
+
+/* Reviews */
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.review-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+.review-card p {
+    color: #666;
+    margin-bottom: 18px;
+}
+
+.review-card h3 {
+    margin-bottom: 8px;
+}
+
+.review-card span {
+    color: #d4ad72;
+}
+
+/* Contact */
+.contact {
+    background: #f0ede6;
+}
+
+.contact p {
+    margin: 12px;
+}
+
+/* Footer */
+footer {
+    background: #17212b;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer h2 {
+    color: #d4ad72;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 8px;
+    color: #d1d5db;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .room-grid,
+    .facility-grid,
+    .review-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .booking-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 50px 7%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .booking-section {
+        margin: 20px 12px;
+    }
+
+    .booking-form,
+    .room-grid,
+    .facility-grid,
+    .review-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 50px 6%;
+    }
+
+    .section h2 {
+        font-size: 27px;
+    }
+}
